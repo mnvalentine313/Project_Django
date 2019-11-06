@@ -1,0 +1,11 @@
+<h2>All Videos</h2>
+
+<ul>
+    {% for video in videos %}
+        <li>
+            <a href="{% url 'video_detail' pk=video.pk %}">
+                {{ video.song }} by {{ video.artist }} posted by {{ user.username }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

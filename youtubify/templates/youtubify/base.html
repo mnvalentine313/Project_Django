@@ -1,0 +1,20 @@
+<!-- {% load staticfiles %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Youtubify</title>
+    
+</head>
+<body>
+    <h1>Over the Rabbit Hole</h1>
+    <h3>Enjoy playlists without the temptation of rabbit holes!</h3>
+        <nav>
+            <a href="{% url 'videos_list' %}">View All Videos</a>
+        </nav>
+        {% block content %}
+        {% endblock %}
+</body>
+</html>
