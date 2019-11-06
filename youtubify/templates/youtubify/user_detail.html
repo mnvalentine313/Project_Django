@@ -1,14 +1,16 @@
+{% load embed_video_tags %}
 <h2>{{ user.username }}'s Playlist</h2>
 <p>About: {{ user.profile }}</p>
 
 <h4>Videos</h4><a href="{% url 'video_create' %}">(Add a video)</a>
 <ul>
   {% for video in user.videos.all %}
-  <iframe width="560" height="315" src="{{ video.video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  {% video video.video_url '400x300' %}
   <br></br>
 
   {% endfor %}
 </ul>
 
 <a href="{% url 'user_edit' pk=user.pk %}">Edit user</a><br></br>
-<a href="{% url 'user_delete' pk=user.pk %}">Delete User</a>
+<a href="{% url 'user_delete' pk=user.pk %}">Delete User</a> <br></br>
+<a href="{% url 'users_list' %}">View All Users</a>

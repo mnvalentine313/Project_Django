@@ -9,6 +9,7 @@ pylint = "*"
 [packages]
 django = "*"
 psycopg2-binary = "*"
+django-embed-video = "*"
 
 [requires]
 python_version = "3.7"
