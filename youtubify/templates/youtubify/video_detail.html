@@ -1,6 +1,6 @@
 {% load embed_video_tags %}
 
-<h2>{{ video.song }} by {{ video.artist }} <a href="{% url 'video_edit' pk=video.pk %}">(edit)</a></h2>
+<h2>"{{ video.song }}" by {{ video.artist }} <a href="{% url 'video_edit' pk=video.pk %}">(edit)</a></h2>
 </br>
 {% video video.video_url '600x400' %}
 <br></br>

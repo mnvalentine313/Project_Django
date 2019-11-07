@@ -2,15 +2,18 @@
 <h2>{{ user.username }}'s Playlist</h2>
 <p>About: {{ user.profile }}</p>
 
-<h4>Videos</h4><a href="{% url 'video_create' %}">(Add a video)</a>
-<ul>
+<h4>Videos (<a href="{% url 'video_create' %}">+</a>)</h4>
+
   {% for video in user.videos.all %}
-  {% video video.video_url '400x300' %}
+  <p>"{{ video.song }}" by {{ video.artist }}</p>
+  {% video video.video_url '400x267' %}
   <br></br>
 
   {% endfor %}
-</ul>
 
+
+<span class="lowerLinks">
 <a href="{% url 'user_edit' pk=user.pk %}">Edit user</a><br></br>
 <a href="{% url 'user_delete' pk=user.pk %}">Delete User</a> <br></br>
-<a href="{% url 'users_list' %}">View All Users</a>
+<a href="{% url 'users_list' %}">Take Me Home</a>
+</span>

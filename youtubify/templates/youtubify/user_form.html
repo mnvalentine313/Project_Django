@@ -1,7 +1,5 @@
-{% extends 'youtubify/base.html' %} 
-
 {% block content %}
-<h1>New User</h1>
+<h1>User Info</h1>
 <form method="POST">
   {% csrf_token %} 
   {{ form.as_p }}

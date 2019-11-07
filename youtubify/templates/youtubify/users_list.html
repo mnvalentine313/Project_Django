@@ -1,7 +1,7 @@
 {% extends "youtubify/base.html" %}
 
 {% block content %}
-<h2>Users <a href="{% url 'user_create' %}">(+)</a></h2>
+<h2>Users (<a href="{% url 'user_create' %}">+</a>)</h2>
 
 <ul>
     {% for user in users %} 

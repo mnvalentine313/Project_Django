@@ -11,8 +11,17 @@
 <body>
     <h1>Over the Rabbit Hole</h1>
     <h3>Enjoy playlists without the temptation of rabbit holes!</h3>
+    <p>Have you ever wished to enjoy your favorite videos without the overstimulation typically encountered on YouTube? Build your personal playlists here! <br></br> When you find a video you like, Click <span>Share</span>, copy the link that comes up, and paste into <span>Over the Rabbit Hole</span>.</p>
         <nav>
-            <a href="{% url 'videos_list' %}">View All Videos</a>
+            <div class="user-info">
+                {% if user.is_authenticated %} You are currently signed in as: {{ user.username }}
+                <a href="{% url 'logout' %}">Log Out</a>
+                {% else %}
+                <a href="{% url 'login' %}">Log In</a>
+                {% endif %}
+                <a href="{% url 'signup' %}">Sign Up</a>
+            </div>
+            <a href="{% url 'videos_list' %}">Browse All Videos</a>
         </nav>
         {% block content %}
         {% endblock %}

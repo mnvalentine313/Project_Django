@@ -4,8 +4,10 @@
     {% for video in videos %}
         <li>
             <a href="{% url 'video_detail' pk=video.pk %}">
-                {{ video.song }} by {{ video.artist }} posted by {{ video.user }}
+                "{{ video.song }}"" by {{ video.artist }} posted by {{ video.user }}
             </a>
         </li>
     {% endfor %}
 </ul>
+
+<a href="{% url 'users_list' %}">Take Me Home</a>

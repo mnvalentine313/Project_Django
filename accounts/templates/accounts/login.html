@@ -1,0 +1,19 @@
+{% extends 'youtubify/base.html' %} 
+{% block content %} 
+{% if form.errors %}
+<p>Have you signed up yet? If not, please do. Otherwise, your username and password do not match. Please try again.</p>
+{% endif %}
+
+{% if next %}
+    <p>You must log in to see this page.</p>
+{% endif %}
+
+<form method="post" action="{% url 'login' %}">
+  {% csrf_token %} 
+  {{form.as_p}}
+
+  <input type="submit" value="login" />
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>
+
+{% endblock %}
