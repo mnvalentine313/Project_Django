@@ -6,7 +6,8 @@ from django.contrib.auth.decorators import login_required
 
 def users_list(request):
     users = User.objects.all()
-    return render(request, 'youtubify/users_list.html', {'users': users})
+    videos = Video.objects.all()
+    return render(request, 'youtubify/users_list.html', {'users': users, 'videos': videos})
 
 @login_required
 def user_detail(request, pk):
