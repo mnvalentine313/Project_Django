@@ -11,4 +11,5 @@ urlpatterns = [
     path('video/<int:pk>', views.video_detail, name='video_detail'),
     path('video/<int:pk>/edit', views.video_edit, name='video_edit'),
     path('video/new', views.video_create, name='video_create'),
+    path('video/<int:pk>/delete', views.video_delete, name='video_delete'),
 ]

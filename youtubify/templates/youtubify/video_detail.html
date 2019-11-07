@@ -7,3 +7,4 @@
 <a href="{% url 'user_detail' pk=video.user.pk %}">Return to {{ video.user }}'s List</a>
 <br></br>
 <a href="{% url 'videos_list' %}">Back to All Videos</a>
+<a href="{% url 'video_delete' pk=video.pk %}">Delete Video</a>

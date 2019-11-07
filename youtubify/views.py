@@ -72,3 +72,7 @@ def video_edit(request, pk):
     else:
         form = VideoForm(instance=video)
     return render(request, 'youtubify/video_form.html', {'form': form}) 
+
+def video_delete(request, pk):
+    Video.objects.get(id=pk).delete()
+    return redirect('videos_list')
