@@ -75,4 +75,4 @@ def video_edit(request, pk):
 
 def video_delete(request, pk):
     Video.objects.get(id=pk).delete()
-    return redirect('videos_list')
+    return redirect('users_list')

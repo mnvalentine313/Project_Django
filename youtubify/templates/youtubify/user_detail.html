@@ -5,7 +5,7 @@
 <h4>Videos (<a href="{% url 'video_create' %}">+</a>)</h4>
 
   {% for video in user.videos.all %}
-  <p>"{{ video.song }}" by {{ video.artist }}</p>
+  <a href="{% url 'video_detail' pk=video.pk %}">"{{ video.song }}" by {{ video.artist }}</a><br></br>
   {% video video.video_url '400x267' %}
   <br></br>
 
