@@ -76,3 +76,6 @@ def video_edit(request, pk):
 def video_delete(request, pk):
     Video.objects.get(id=pk).delete()
     return redirect('users_list')
+
+def about(request):
+    return render(request, 'youtubify/about.html')

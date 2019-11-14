@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Youtubify</title>
+    <title>OTRH</title>
     <link rel="stylesheet" href="{% static 'css/youtubify.css' %}" />
     <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto&display=swap" rel="stylesheet">
     
@@ -16,6 +16,7 @@
     <h3>Enjoy playlists without the temptation of rabbit holes!</h3>
     <p>Have you ever wished to enjoy your favorite videos without the overstimulation typically encountered on YouTube? Build your personal playlists here! <br></br> When you find a video you like, Click <span>Share</span>, copy the link that comes up, and paste into <span>Over the Rabbit Hole</span>.</p>
         <nav>
+            <a href="{% url 'about' %}">About</a>
             <div class="user-info">
                 {% if user.is_authenticated %} You are currently signed in as: {{ user.username }}
                 <a href="{% url 'logout' %}">Log Out</a>
