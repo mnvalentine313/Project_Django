@@ -1,10 +1,17 @@
-<h2>All Videos</h2>
+{% load staticfiles%}
+<link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/youtubify.css' %}">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Roboto&display=swap" rel="stylesheet">
+
+<a href="{% url 'users_list' %}"><img src="https://i.imgur.com/Qx4b03m.png" alt="Over the Rabbit Hole Logo of woman in an apron free falling over the name of the app."></a>
+
+<h2>All Videos (<a href="{% url 'video_create' %}">+</a>)</h2>
 
 <ul>
     {% for video in videos %}
         <li>
             <a href="{% url 'video_detail' pk=video.pk %}">
-                "{{ video.song }}"" by {{ video.artist }} posted by {{ video.user }}
+                "{{ video.song }}" by {{ video.artist }} posted by {{ video.user }}
             </a>
         </li>
     {% endfor %}
