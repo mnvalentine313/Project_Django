@@ -1,4 +1,6 @@
 {% extends 'youtubify/base.html' %} 
+{% load socialaccount %}
+{% providers_media_js %}
 
 {% block content %} 
 {% if form.errors %}
@@ -9,6 +11,7 @@
 {% if next %}
     <p>You must log in to see this page.</p>
 {% endif %}
+<button type="button"><a href="{% provider_login_url "google" %}">Log In with Google</a></button>
 <form method="post" action="{% url 'login' %}">
   {% csrf_token %} 
   {{form.as_p}}
