@@ -11,6 +11,7 @@ django = "*"
 psycopg2-binary = "*"
 django-embed-video = "*"
 django-forms = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.7"

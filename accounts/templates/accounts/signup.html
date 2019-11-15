@@ -1,6 +1,7 @@
-{% extends "youtubify/base.html" %} 
-{% block content %}
+{% extends "youtubify/base.html" %}
 
+{% block content %}
+<h1>Signing Up</h1> 
 <form method="post" action="{% url 'signup' %}">
   {% csrf_token %} 
   {{form.as_p}}
