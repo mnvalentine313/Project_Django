@@ -1,12 +1,26 @@
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Monoton', cursive; */
 body {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+
     background-color: #FAE9D6;
 }
+
+body::after {
+    content: "";
+    background: url("https://www5.lunapic.com/editor/working/157384084882590950?81883");
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+  }
 
 h1 {
     font-family: 'Monoton', cursive;

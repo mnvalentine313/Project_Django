@@ -1,5 +1,6 @@
 {% extends 'youtubify/base.html' %} 
 {% block content %}
 <p>You have logged out.</p>
-<a href="{% url 'login' %}">Click here to login again.</a>
+<button type="button"><a href="{% url 'login' %}">Click here to login again.</a></button>
+<button type="button"><a href="{% url 'users_list' %}">Take Me Home</a></button>
 {% endblock %}
