@@ -10,20 +10,18 @@ This is the final, independent project completed in General Assmebly's Software 
 _Over the Rabbit Hole_ (OTRH) is a browser-based app where users can create "playlists" of YouTube videos without all the distractions of YouTube. The layout is intentionally simple to help facilitate this goal.
 
 #### User Stories
-The following user stories were taken into consideration when building the OTRH app:
+_ORTH_ was designed with everyone in mind. The following user stories were taken into consideration when building the OTRH app:
 
-Over the Rabbit Hole was designed with everyone in mind:
-
-* As a person who is easily distracted, I want to enjoy YouTube without further temptation so that I can enjoy the desired content."
-* As a car-/homeowner, I want to be able to easily keep track of the repair/home improvement videos I've chosen for future reference so that I can remain focused on my original goal.
-* As a current student, I want to keep track of all my helpful tutorial videos without further diversions so that I may complete my assignments efficiently, on time.
+- As a person who is easily distracted, I want to enjoy YouTube without further temptation so that I can enjoy the desired content.
+- As a car-/homeowner, I want to be able to easily keep track of the repair/home improvement videos I've chosen for future reference so that I can remain focused on my original goal.
+- As a current student, I want to keep track of all my helpful tutorial videos without further diversions so that I may complete my assignments efficiently, on time.
 
 #### Wireframes
 
 ![image](planning/OTRH_Wireframes.png)
 
 #### Current Features & Future Goals
-This app features full CRUD capability for all end users who create an account, either through OTRH directly, or by using their Google logins.
+This app features full CRUD capability for all end users who create an account, either through OTRH directly, or by authorizing use of their Google account logins instead.
 
 Future goals for this app include:
 - Updates to CSS
