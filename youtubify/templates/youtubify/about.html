@@ -1,4 +1,4 @@
-{% load staticfiles%}
+{% load static%}
 <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'css/youtubify.css' %}">
 <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto&display=swap" rel="stylesheet">
@@ -17,5 +17,5 @@
 
 <p>When you find a video you like, Click <span>Share</span>, copy the link that comes up, and paste into <span class="title">Over the Rabbit Hole</span>. Check out the sample video below on how to copy the individual link.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vKqAH46_gi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<a href="{% url 'users_list' %}">Take Me Home</a>
+<br></br>
+<button type="button><a href="{% url 'users_list' %}">Take Me Home</a></button>
