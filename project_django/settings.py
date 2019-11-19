@@ -134,7 +134,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = 'project_django/youtubify/static/'
+STATIC_ROOT = 'youtubify/static/'
 
 # Django all auth settings
 AUTHENTICATION_BACKENDS = (

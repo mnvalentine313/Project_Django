@@ -4,6 +4,14 @@
 <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto&display=swap" rel="stylesheet">
 
 <a href="{% url 'users_list' %}"><img src="https://i.imgur.com/Qx4b03m.png" height="194.5" width="350" alt="Over the Rabbit Hole Logo of woman in an apron free falling over the name of the app."></a>
+<br></br>
+<nav>
+    <ul class="navbar">
+        <li class="topnav"><a href="{% url 'users_list' %}">Home</a></li>
+        <li class="topnav"><a href="{% url 'videos_list' %}">Browse All Videos</a></li>
+        <li class="topnav"><a href="{% url 'signup' %}">Sign Up</a></li>
+    </ul>
+</nav>
 
 <h2>Have you ever wished to enjoy your favorite videos without the overstimulation typically encountered on YouTube? Keep track of your favorite videos here!</h2>
     
@@ -17,5 +25,4 @@
 
 <p>When you find a video you like, Click <span>Share</span>, copy the link that comes up, and paste into <span class="title">Over the Rabbit Hole</span>. Check out the sample video below on how to copy the individual link.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vKqAH46_gi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br></br>
-<button type="button><a href="{% url 'users_list' %}">Take Me Home</a></button>
+

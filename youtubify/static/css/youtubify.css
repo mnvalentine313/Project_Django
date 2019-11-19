@@ -5,7 +5,7 @@ body {
     background-color: #FAE9D6;
 }
 
-body::after {
+/* body::after {
     content: "";
     background: url("https://www5.lunapic.com/editor/working/157384084882590950?81883");
     opacity: 0.4;
@@ -20,7 +20,7 @@ body::after {
     background-attachment: fixed;
     background-size: cover;
     min-height: 100%;
-  }
+  } */
 
 h1 {
     font-family: 'Monoton', cursive;
@@ -38,11 +38,39 @@ a {
 }
 
 .username {
-    font-weight: 900;
-    color: #DB7D58
+    color: #DB7D58;
+    font-weight: bold;
 }
 
-button {
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DB7D58;
+  }
+
+  .topnav {
+    float: left;
+  }
+  
+  .topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .topnav :hover {
+    background-color: #5A609F;
+  }
+
+  .user-info {
+      display: inline;
+  }
+
+  button {
     color: #5A609F;
     background-color: #FAE9D6;
     border: 2px solid #5A609F;
