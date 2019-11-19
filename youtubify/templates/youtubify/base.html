@@ -17,7 +17,7 @@
 </head>
 <body>
     <h3>Enjoy YouTube without the temptation of rabbit holes!</h3>
-    <p>Have you ever wished to enjoy your favorite videos without the overstimulation typically encountered on YouTube? Build your personal playlists here! <br></br> When you find a video you like, Click <span>Share</span>, copy the link that comes up, and paste into <span>Over the Rabbit Hole</span>.</p>
+    <p>Have you ever wished to enjoy your favorite videos without the overstimulation typically encountered on YouTube? Build your personal playlists here! <br></br> When you find a video you like, Click <span class="username"><i>Share</i></span>, copy the link that comes up, and paste into <span class="username">Over the Rabbit Hole</span>.</p>
         <nav>
             <ul class="navbar">
                 <li class="topnav"><a href="{% url 'about' %}">About</a></li>
@@ -25,14 +25,13 @@
                 <li class="topnav"><a href="{% url 'signup' %}">Sign Up</a></li>
             </ul>
         </nav>
-                <div class="user-info">
-                    {% if user.is_authenticated %} <p>You are currently signed in as: <span class="username">{{ user.username }}</span></p>
-                    <a href="{% url 'logout' %}">Log Out</a>
-                    {% else %}
-                    <a href="{% url 'login' %}">Log In</a>
-                    {% endif %}
-                </div>
-
+        <div class="user-info">
+            {% if user.is_authenticated %} <p>You are currently signed in as: <span class="username">{{ user.username }}</span></p>
+            <a href="{% url 'logout' %}">Log Out</a>
+            {% else %}
+            <br></br><a href="{% url 'login' %}">Log In</a>
+            {% endif %}
+        </div>
         {% block content %}
         {% endblock %}
 </body>

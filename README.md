@@ -24,7 +24,7 @@ _ORTH_ was designed with everyone in mind. The following user stories were taken
 This app features full CRUD capability for all end users who create an account, either through OTRH directly, or by authorizing use of their Google account logins instead.
 
 Future goals for this app include:
-- Updates to CSS
+- Integrate YouTube API
 - Merging logins and user accounts
 - Allowing users to choose other external sources for account creation such as Facebook, Twitter, or GitHub
 
